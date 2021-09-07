@@ -1,13 +1,2368 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ------------------------------------------------colorsetfor website------------------------------------ */
+
+:root{
+    --bgcolor:#07ceca;
+    --circlebg:#2df1ee;
+    --h1size: 2.5em;
+}
+/* ------------------------------------------------colorset end ------------------------------------ */
+
+
+/* ------------------------------------------------navsection start------------------------------------ */
+.navsection{
+    background-color: whitesmoke;
+    padding: 1em 2em ;
+    width: 100vw;
+    
+}
+.navsectionformobile{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.3em;
+}
+.btnmenu{
+    border: unset;
+    background-color: unset;
+    font-size:1.5em;
+    cursor: pointer;
+    padding: 0.2em 0 0 0; 
+}
+.navsectionfordesktop{
+    display: none;
+}
+.navsectionfordesktop li{
+    list-style-type: none;
+    background-color: whitesmoke;
+    margin: 0.2em 0;
+    padding: 0.2em 0;
+}
+.navsection li a{
+    font-size: 1.1em;
+    
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* ------------------------------------------------navsection end------------------------------------ */
+
+
+/* ------------------------------------------------Herosection start------------------------------------ */
+.herosectionbg{
+    background-color: var(--bgcolor);
+    height: 192vh;
+    width: 100vw;
+    position: relative;
+    text-align: center;
 }
+.herosectionbg h1{
+    padding: 1.3em 0 0 0 ;
+    color: white;
+    font-weight: bold;
+    font-size:var(--h1size); 
+}
+.herosectionbg h4{
+    color: white;
+    position: absolute;
+    top: 96%;
+    left: 30%;
+}
+.herosectionbg img{
+    position: absolute;
+    top: 14%;
+    left:10% ;
+    width: 290px;
+    height: 310px;
+    object-fit: cover;
+}
+.strategybox{
+    position: absolute;
+    top: 37%;
+    left: 21%;
+    background-color: white;
+    height: 150px;
+    width: 210px;
+    display: grid;
+    place-items: center;
+    box-shadow: 6px 6px 20px 0px grey ;
+}
+.uxbox{
+    position: absolute;
+    top: 52%;
+    left: 21%;
+    background-color: white;
+    height: 150px;
+    width: 210px;
+    display: grid;
+    place-items: center;
+    box-shadow: 6px 6px 20px 0px grey ;
+
+}
+
+.developmentbox{
+    position: absolute;
+    top: 67%;
+    left: 21%;
+    background-color: white;
+    height: 150px;
+    width: 210px;
+    display: grid;
+    place-items: center;
+    box-shadow: 6px 6px 20px 0px grey ;
+
+}
+
+.testingbox{
+    position: absolute;
+    top: 82%;
+    left: 21%;
+    background-color: white;
+    height: 150px;
+    width: 210px;
+    display: grid;
+    place-items: center;
+    box-shadow: 6px 6px 20px 0px grey ;
+
+}
+.btnicon{
+    /* background-color: #a6dbd8; */
+    background-color: #77807f;
+    height: 60px;
+    width: 60px;
+    font-size: 2em;
+    border-radius: 50%;
+    color: var(--bgcolor);
+    border:unset
+    
+}
+.herosectionbg h2{
+    color: var(--bgcolor);
+}
+/* ------------------------------------------------Herosection end------------------------------------ */
+
+
+/* ------------------------------------------------appdetailsection start------------------------------------ */
+.appdetailsection{
+    height: 100vh;
+    width: 100vw;
+    background-color: white;  
+    position: relative;
+     
+}
+.centerappdetaildiv{
+    position: absolute;
+    left: 10%;
+    top: 6%;
+    width: 290px;
+    text-align: center;
+}
+.centerappdetaildiv h2{
+    font-size: 2em;
+    margin-bottom: 1em;
+    
+}
+.centerappdetaildiv p{
+    text-align: justify;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+.readmorebtn{
+    padding: 0.4em;
+    height: 6vh;
+    width: 50vw;
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--bgcolor);
+    border: unset;
+    cursor: pointer;
+}
+.circlediv{
+    position: absolute;
+    top:60% ;
+    left: 22%;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: var(--circlebg);
+}
+.mobileimg{
+    position: absolute;
+    top:58% ;
+    left: 14%;
+    height: 233px;
+    width: 270px;
+    object-fit: cover;
+}
+
+
+
+
+/* ------------------------------------------------appdetailsection end------------------------------------ */
+
+
+/* ------------------------------------------------companydetailsection start------------------------------------ */
+.companydetailbg{
+    background-color: var(--bgcolor);
+    height: 160vh;
+    width: 100vw;
+    position: relative;
+}
+.smallcircle{
+    position: absolute;
+    top: 4%;
+    left: 10%;
+    height: 80px;
+    width: 80px;
+    background-color: var(--circlebg);
+    border-radius: 50%;
+
+}
+.personsittingimg{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    width:270px ;
+    height: 270px;
+    object-fit: cover;
+    
+}
+.mediumcircle{
+    position: absolute;
+    top: 82%;
+    left: 58%;
+    height: 125px;
+    width:125px;
+    background-color:rgb(86, 86, 158);
+    border-radius: 50%;
+
+}
+.companydetailsection{
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    width: 290px;
+    color: white;
+}
+.companydetailsection h1{
+    font-size: var(--h1size);
+}
+.companydetailsection h4{
+    font-size: 1.4em;
+    margin-bottom: 1em;
+}
+.companydetailsection p{
+    text-align: justify;
+    line-height: 1.4em;
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+.learnmorebtn{
+    padding: 0.4em;
+    height: 6vh;
+    width: 50vw;
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--bgcolor);
+    cursor: pointer;
+    border:2px solid white;
+    letter-spacing: 0.1em;
+
+}
+
+
+/* ------------------------------------------------companydetailsection end------------------------------------ */
+
+
+/* ------------------------------------------------servicessection start------------------------------------ */
+.servicesection{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: whitesmoke;
+}
+.groupimg{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 290px;
+    height: 285px;
+    object-fit: cover;
+    z-index: 1;
+}
+.colordiv{
+    position: absolute;
+    top: 49%;
+    left: 10%;
+    height: 260px;
+    width: 250px;
+    background-color:rgb(86, 86, 158);
+    z-index: 1;
+
+}
+.servicedetal{
+    position: absolute;
+    top: 40%;
+    right: 9.5%;
+    width: 268px;
+    height: 300px;
+    background-color: white;
+    z-index: 999;
+    padding: 1em;
+}
+.servicedetal h1{
+    margin-bottom: 1em;
+}
+.servicedetal p{
+    line-height: 1.5em;
+}
+
+/* ------------------------------------------------servicessection end------------------------------------ */
+
+/* ------------------------------------------------servicessection2 start------------------------------------ */
+.servicesectionbg{
+    background-color: var(--bgcolor);
+    height: 180vh;
+    width: 100vw;
+    position: relative;
+}
+.smallcircle2{
+    position: absolute;
+    top: 4%;
+    right: 10%;
+    height: 90px;
+    width: 90px;
+    background-color: var(--circlebg);
+    border-radius: 50%;
+
+}
+.companyinfo{
+    position: absolute;
+    top: 17%;
+    left: 10%;
+    background-color: white;
+    width: 290px;
+    height: 290px;
+    padding: 1em;
+    z-index: 0;
+    
+}
+.personwithplane{
+    position: absolute;
+    top: 42%;
+    left: 10%;
+    width: 290px;
+    height: 290px;
+    object-fit: cover;
+    z-index: 1;
+}
+.companyinfo p{
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-bottom: 1.4em;
+}
+.learnmorebtn2{
+    padding: 0.4em;
+    height: 6vh;
+    width: 50vw;
+    text-transform: uppercase;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    border:2px solid black;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+
+}
+.sidedetail{
+    position: absolute;
+    width: 250px;
+    height: 215px;
+    top: 65%;
+    right: 9%;
+    background-color: white;
+    z-index: 999;
+    padding: 1em ;
+}
+.sidedetail h1{
+    color: var(--bgcolor);
+    font-size: 2em;
+}
+.mediumcircle2{
+    position: absolute;
+    top: 86%;
+    left: 10%;
+    height: 125px;
+    width:125px;
+    background-color:rgb(86, 86, 158);
+    border-radius: 50%;
+
+}
+
+/* ------------------------------------------------servicessection2 end------------------------------------ */
+
+/* ------------------------------------------------teamsection start------------------------------------ */
+.teamsectionbg{
+    background-color: white;
+    height: 290vh;
+    width: 100vw;
+    position: relative;
+    
+}
+
+.teamimg{
+    position:absolute;
+    top: 6%;
+    left: 10%;
+    width: 290px;
+    height: 370px;
+    object-fit: cover;
+}
+.teamdetail{
+    position: absolute;
+    top:25.5%;
+    left: 10%;
+    width: 290px;
+    height: 195px;
+    background-color:rgb(86, 86, 158);
+    color: white;
+    padding: 1em;
+  
+}
+.teamdetail h3{
+    font-size: 1.9em;
+    margin-bottom: 0.5em;
+}
+.teamdetail p{
+    font-size: 1.2em;
+}
+.teams1{
+    position: absolute;
+    top:35.9%;
+    left: 10%;
+    width: 290px;
+    height: 370px;
+    object-fit: cover;
+}
+.teams2{
+    position: absolute;
+    top:55.8%;
+    left: 10%;
+    width: 290px;
+    height: 370px;
+    object-fit: cover;
+}
+.teams3{
+    position: absolute;
+    top:75.7%;
+    left: 10%;
+    width: 290px;
+    height: 370px;
+    object-fit: cover;
+}
+.teamsectionbg h4{
+    position: absolute;
+    top: 97%;
+    left: 32%;
+}
+
+
+
+/* ------------------------------------------------teamsection end------------------------------------ */
+
+
+
+
+
+
+/* ------------------------------------------------featuresection start------------------------------------ */
+.featuresectionbg{
+    background-color: var(--bgcolor);
+    height: 200vh;
+    width: 100vw;
+    
+}
+.featurecenter{
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 1em 0;
+}
+.title{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    padding: 1em 0;
+   
+}
+.featuresectionbg h2{
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.1em;
+}
+.featuresectionbg h1{
+    color: white;
+    width: 80%;
+    text-align: center;
+}
+.eachbox{
+    background-color: var(--circlebg);
+    margin-top: 1.5em;
+    width: 80%;
+    height: 312px;
+    padding: 1em;
+}
+.eachbox i{
+    font-size: 2.5em;
+    color: white;
+    margin-bottom: 0.4em;
+}
+.eachbox h2{
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.6em;
+}
+.eachbox p{
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+.morebtn{
+    padding: 0.3em;
+    border: unset;
+    background-color: unset;
+    color: white;
+    font-size: 1.1em;
+    font-weight: lighter;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.underline{
+    height: 1%;
+    width: 15vw;
+    margin: 0 auto;
+    background-color: white;
+}
+/* ------------------------------------------------featuresection end------------------------------------ */
+
+/* ------------------------------------------------footersection start------------------------------------ */
+.footersection{
+    height: auto;
+    width: 100vw;
+}
+.firstfooter{
+    width: 100%;
+    height: 190px;
+    background-color:#09a19f;
+    display: grid;
+    place-items: center;
+}
+.secondfooter{
+    width: 100%;
+    height: 190px;
+    background-color:var(--circlebg);
+    display: grid;
+    place-items: center;
+}
+.thirdfooter{
+    width: 100%;
+    height: 190px;
+    background-color:#7bcfce;
+    display: grid;
+    place-items: center;
+
+}
+.centerfooter{
+    height: 90%;
+    width: 50%;
+    text-align: center;
+    padding: 1em 0;
+    color: white;
+}
+.centerfooter i{
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+.centerfooter h4{
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+.centerfooter h3{
+    font-size: 1.4em;
+}
+/* ------------------------------------------------footersection end------------------------------------ */
+
+
+/* ------------------------------------------------Herosection device 576 start------------------------------------ */
+@media screen and (min-width:576px)  {
+    .herosectionbg{
+        background-color: var(--bgcolor);
+        height: 160vh;
+        width: 100vw;
+        position: relative;
+        text-align: center;
+    }
+    .herosectionbg h1{
+        position: absolute;
+        padding: 0;
+        top: 4.7%;
+        right: 5.8%;
+        z-index: 999;
+        font-size:4em;
+    }
+    .herosectionbg h4{
+        top: 97%;
+        left: 15%;
+    }
+    .herosectionbg img{
+        top: 16%;
+        left: 6%;
+        width: 410px;
+        height: 480px;  
+    }
+    .strategybox{
+        top: 60%;
+        left: 17%; 
+    }
+    .uxbox{
+        top: 60%;
+        left: 57.8%;
+    }
+    .developmentbox{
+        top: 77%;
+        left: 17%;
+    }
+    .testingbox{
+        top: 77%;
+        left: 57.8%;
+    }
+    
+}
+
+/* ------------------------------------------------Herosection device 576 end------------------------------------ */
+
+
+
+/* ------------------------------------------------Herosection device 768 start------------------------------------ */
+@media screen and (min-width:768px) {
+    .herosectionbg h1{
+        position: absolute;
+        padding: 0;
+        top: 7%;
+        right: 4.4%;
+        z-index: 999;
+        font-size:4em;
+    }
+    .herosectionbg h4{
+        top: 97%;
+        left: 4.5%;
+        font-size: 1.3em;
+    }
+    .herosectionbg img{
+        top: 6%;
+        left: 4.5%;
+        width: 595px;
+        height: 595px;  
+    }
+    .strategybox{
+        top: 58%;
+        left: 35%; 
+        height: 160px;
+        width: 220px;
+    }
+    .uxbox{
+        top: 58%;
+        left: 67%;
+        height: 160px;
+        width: 220px;
+    }
+    .developmentbox{
+        top: 76%;
+        left: 35%;
+        height: 160px;
+        width: 220px;
+    }
+    .testingbox{
+        top: 76%;
+        left: 67%;
+        height: 160px;
+        width: 220px;
+    }
+    
+}
+
+/* ------------------------------------------------Herosection device 768 end------------------------------------ */
+
+
+/* ------------------------------------------------Herosection device 992 start------------------------------------ */
+@media screen and (min-width:992px) {
+    .navsection{
+        padding: 1em 3em ;
+    }
+    .herosectionbg h1{
+        top: 7%;
+        right: 5%;
+        font-size:4.9em;
+    }
+    .herosectionbg h4{
+        top: 75%;
+        left: 3.3%;
+        font-size: 1.3em;
+    }
+    .herosectionbg img{
+        top: 6%;
+        left: 4.9%;
+        width: 730px;
+        height: 710px;  
+    }
+    .strategybox{
+        top: 60%;
+        left: 46%; 
+        height: 170px;
+        width: 230px;
+    }
+    .uxbox{
+        top: 60%;
+        left: 72%;
+        height: 170px;
+        width: 230px;
+    }
+    .developmentbox{
+        top: 79%;
+        left: 46%;
+        height: 170px;
+        width: 230px;
+    }
+    .testingbox{
+        top: 79%;
+        left: 72%;
+        height: 170px;
+        width: 230px;
+    }
+    
+}
+
+/* ------------------------------------------------Herosection device 992 end------------------------------------ */
+
+/* ------------------------------------------------Herosection device 1200 start------------------------------------ */
+@media screen and (min-width:1200px) {
+    .navsection{
+        padding: 1em 3em ;
+    }
+    .herosectionbg h1{
+        top: 7%;
+        right: 3.7%;
+        font-size:5.6em;
+    }
+    .herosectionbg h4{
+        top: 75%;
+        left: 3.7%;
+        font-size: 1.5em;
+    }
+    .herosectionbg img{
+        top: 6%;
+        left: 3.7%;
+        width: 1070px;
+        height: 710px;  
+    }
+    .strategybox{
+        top: 56%;
+        left: 59%; 
+        height: 180px;
+        width: 240px;
+    }
+    .uxbox{
+        top: 56%;
+        left: 79%;
+        height: 180px;
+        width: 240px;
+    }
+    .developmentbox{
+        top: 76%;
+        left: 59%;
+        height: 180px;
+        width: 240px;
+    }
+    .testingbox{
+        top: 76%;
+        left: 79%;
+        height: 180px;
+        width: 240px;
+    }
+    
+}
+
+/* ------------------------------------------------Herosection device 1200 end------------------------------------ */
+
+
+
+/* ------------------------------------------------appdetailsection device 576 start------------------------------------ */
+@media screen and (min-width:576px) {
+    .appdetailsection{
+        height: 120vh;
+         
+    }
+    .centerappdetaildiv{
+        position: absolute;
+        left: 6%;
+        top: 6%;
+        width: 508px;
+        text-align: center;
+    }
+    .centerappdetaildiv h2{
+        font-size: 3em;
+        margin-bottom: 0.6em;
+        
+    }
+    .centerappdetaildiv p{
+        font-size: 1.3em;
+        margin-bottom: 1.4em;
+    }
+    .readmorebtn{
+     
+        width: 30vw;
+       
+    }
+    .circlediv{
+        position: absolute;
+        top:43% ;
+        left: 15%;
+        height: 390px;
+        width: 390px;
+        
+    }
+    .mobileimg{
+        position: absolute;
+        top:42% ;
+        left: 11%;
+        height: 420px;
+        width: 420px;
+    }
+    
+}
+
+
+/* ------------------------------------------------appdetailsection device 576 end------------------------------------ */
+
+/* ------------------------------------------------appdetailsection device 768 start------------------------------------ */
+@media screen   and (min-width:768px){
+    .appdetailsection{
+        height: 70vh;
+         
+    }
+    .centerappdetaildiv{
+        position: absolute;
+        left: 5%;
+        top: 18%;
+        width: 300px;
+        text-align: center;
+    }
+    .centerappdetaildiv h2{
+        font-size: 2.3em;
+        margin-bottom: 1em;
+        
+    }
+    .centerappdetaildiv p{
+        font-size: 1.2em;
+    }
+    .readmorebtn{
+        width: 20vw;
+       
+    }
+    .circlediv{
+        position: absolute;
+        top:18% ;
+        left: 56%;
+        height: 300px;
+        width: 300px;
+        
+    }
+    .mobileimg{
+        position: absolute;
+        top:19% ;
+        left: 54.3%;
+        height: 320px;
+        width: 320px;
+    }
+}
+
+
+/* ------------------------------------------------appdetailsection device 768 end------------------------------------ */
+
+/* ------------------------------------------------appdetailsection device 992 start------------------------------------ */
+@media screen and (min-width:992px) {
+    .appdetailsection{
+        height: 70vh;
+         
+    }
+    .centerappdetaildiv{
+        position: absolute;
+        left: 5%;
+        top: 20%;
+        width: 400px;
+        height: auto;
+        text-align: center;
+    }
+    .centerappdetaildiv h2{
+        font-size: 2.9em;
+        margin-bottom: 0.5em;
+        text-align: left;
+    
+        
+    }
+    .centerappdetaildiv p{
+        font-size: 1.2em;
+        line-height: 1.6em;
+    }
+    .readmorebtn{
+        width: 15vw;
+       
+    }
+    .circlediv{
+        position: absolute;
+        top:13% ;
+        left: 59%;
+        height: 360px;
+        width: 360px;
+        
+    }
+    .mobileimg{
+        position: absolute;
+        top:13% ;
+        left: 56%;
+        height: 380px;
+        width: 380px;
+    }
+}
+
+
+/* ------------------------------------------------appdetailsection device 992 end------------------------------------ */
+
+
+
+
+/* ------------------------------------------------appdetailsection device 1200 start------------------------------------ */
+@media screen and (min-width:1200px) {
+    
+    .appdetailsection{
+        height: 75vh;
+         
+    }
+    .centerappdetaildiv{
+        position: absolute;
+        left: 3.7%;
+        top: 17%;
+        width: 700px;
+        height: auto;
+        text-align: center;
+    }
+    .centerappdetaildiv h2{
+        font-size: 5em;
+        margin-bottom: 0.5em;
+        text-align: left;
+    
+        
+    }
+    .centerappdetaildiv p{
+        font-size: 1.2em;
+        line-height: 1.8em;
+        width: 550px;
+    }
+    .readmorebtn{
+        width: 13vw;
+       
+    }
+    .circlediv{
+        position: absolute;
+        top:10% ;
+        left: 67%;
+        height:390px;
+        width: 390px;
+        
+    }
+    .mobileimg{
+        position: absolute;
+        top:5% ;
+        left: 64%;
+        height: 450px;
+        width: 450px;
+    }
+    
+}
+
+/* ------------------------------------------------appdetailsection device 1200 end------------------------------------ */
+
+
+
+
+
+/* ------------------------------------------------companydetailsection  device 576 start------------------------------------ */
+@media screen and (min-width:576px) {
+    .smallcircle{
+        position: absolute;
+        top: 4%;
+        left: 6%;
+        height: 100px;
+        width: 100px;
+    }
+    .personsittingimg{
+        position: absolute;
+        top: 53%;
+        left: 6%;
+        width:425px ;
+        height: 370px;   
+    }
+    .mediumcircle{
+        position: absolute;
+        top: 81%;
+        left: 68%;
+        height: 150px;
+        width:150px;
+    }
+    .companydetailsection{
+        position: absolute;
+        left: 6%;
+        top: 20%;
+        width: 425px;
+        color: white;
+    }
+    .learnmorebtn{
+        width: 30vw;
+    } 
+}
+
+
+/* ------------------------------------------------companydetailsection device 576 end------------------------------------ */
+
+/* ------------------------------------------------companydetailsection  device 768 start------------------------------------ */
+@media screen and (min-width:768px) {
+    .companydetailbg{
+        background-color: var(--bgcolor);
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+    }
+    .smallcircle{
+        position: absolute;
+        top: 4%;
+        left: 5%;
+        height: 90px;
+        width: 90px;
+    }
+    .personsittingimg{
+        position: absolute;
+        top: 19%;
+        left: 46%;
+        width:350px ;
+        height: 450px;   
+    }
+    .mediumcircle{
+        position: absolute;
+        top: 78%;
+        left: 79.5%;
+        height: 110px;
+        width:110px;
+    }
+    .companydetailsection{
+        position: absolute;
+        left: 5%;
+        top: 24%;
+        width: 268px;
+        color: white;
+    }
+    .learnmorebtn{
+        width: 20vw;
+    } 
+}
+
+
+/* ------------------------------------------------companydetailsection device 768 end------------------------------------ */
+
+/* ------------------------------------------------companydetailsection  device 992 start------------------------------------ */
+@media screen and (min-width:992px) {
+    .companydetailbg{
+        background-color: var(--bgcolor);
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+    }
+    .smallcircle{
+        position: absolute;
+        top: 4%;
+        left: 5%;
+        height: 100px;
+        width: 100px;
+    }
+    .personsittingimg{
+        position: absolute;
+        top: 17%;
+        left: 48%;
+        width:420px ;
+        height: 450px;   
+    }
+    .mediumcircle{
+        position: absolute;
+        top: 75%;
+        left: 82.8%;
+        height: 120px;
+        width:120px;
+    }
+    .companydetailsection{
+        position: absolute;
+        left: 5%;
+        top: 28%;
+        width: 370px;
+        color: white;
+    }
+    .learnmorebtn{
+        width: 15vw;
+    } 
+}
+
+
+/* ------------------------------------------------companydetailsection device 992 end------------------------------------ */
+
+
+/* ------------------------------------------------companydetailsection  device 1200 start------------------------------------ */
+@media screen and (min-width:1200px) {
+    .companydetailbg{
+        background-color: var(--bgcolor);
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+    }
+    .smallcircle{
+        position: absolute;
+        top: 4%;
+        left: 3.7%;
+        height: 110px;
+        width: 110px;
+    }
+    .personsittingimg{
+        position: absolute;
+        top: 15%;
+        left: 45%;
+        width:610px ;
+        height: 470px;   
+    }
+    .mediumcircle{
+        position: absolute;
+        top: 75%;
+        left: 84%;
+        height: 150px;
+        width:150px;
+    }
+    .companydetailsection{
+        position: absolute;
+        left: 3.7%;
+        top: 30%;
+        width: 500px;
+        color: white;
+    }
+    .learnmorebtn{
+        width: 15vw;
+    } 
+}
+
+
+/* ------------------------------------------------companydetailsection device 1200 end------------------------------------ */
+
+
+
+
+/* ------------------------------------------------servicessection device 576 start------------------------------------ */
+@media screen and (min-width:576px) {
+   
+    .groupimg{
+        position: absolute;
+        top: 5%;
+        left: 6%;
+        width: 460px;
+        height: 370px;
+        object-fit: cover;
+        z-index: 1;
+    }
+    .colordiv{
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        height: 360px;
+        width: 484px;
+        background-color:rgb(86, 86, 158);
+        z-index: 0;
+    
+    }
+    .servicedetal{
+        position: absolute;
+        top: 50%;
+        right: 5.9%;
+        width: 430px;
+        height: 240px;
+        background-color: white;
+        z-index: 999;
+        padding: 1em;
+    }
+    .servicedetal h1{
+        font-size:2.1em;
+        margin-bottom: 0.6em;
+    }
+    .servicedetal p{
+        font-size: 1.3em;
+    }
+    
+}
+
+/* ------------------------------------------------servicessection device 576 end------------------------------------ */
+
+
+/* ------------------------------------------------servicessection device 768 start------------------------------------ */
+@media screen and (min-width:768px) {
+   
+    .groupimg{
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 695px;
+        height: 450px;
+        object-fit: cover;
+        z-index: 1;
+    }
+    .colordiv{
+        position: absolute;
+        top: 47%;
+        left: 10%;
+        height: 300px;
+        width: 570px;
+        background-color:rgb(86, 86, 158);
+        z-index: 0;
+    
+    }
+    .servicedetal{
+        position: absolute;
+        top: 54%;
+        right: 4.6%;
+        width: 560px;
+        height: 210px;
+        background-color: white;
+        z-index: 999;
+        padding: 1em;
+    }
+    .servicedetal h1{
+        font-size:1.9em;
+        margin-bottom: 0.6em;
+    }
+    .servicedetal p{
+        font-size: 1.2em;
+    }
+    
+    
+}
+
+/* ------------------------------------------------servicessection device 768 end------------------------------------ */
+
+
+/* ------------------------------------------------servicessection device 992 start------------------------------------ */
+@media screen and (min-width:992px) {
+   
+    .groupimg{
+        position: absolute;
+        top: 8%;
+        left: 5%;
+        width: 695px;
+        height: 500px;
+        object-fit: cover;
+        z-index: 1;
+    }
+    .colordiv{
+        position: absolute;
+        top: 47%;
+        left: 35%;
+        height: 300px;
+        width: 490px;
+        background-color:rgb(86, 86, 158);
+        z-index: 0;
+    
+    }
+    .servicedetal{
+        position: absolute;
+        top: 39%;
+        right: 4.6%;
+        width: 550px;
+        height: 210px;
+        background-color: white;
+        z-index: 999;
+        padding: 1em;
+    }
+    .servicedetal h1{
+        font-size: 1.8em;
+        margin-bottom: 0.6em;
+    }
+    .servicedetal p{
+        font-size: 1.2em;
+    }
+    
+}
+
+/* ------------------------------------------------servicessection device 992 end------------------------------------ */
+
+
+/* ------------------------------------------------servicessection device 1200 start------------------------------------ */
+@media screen and (min-width:1200px) {
+   
+    .groupimg{
+        position: absolute;
+        top: 9%;
+        left: -2.2%;
+        width: 795px;
+        height: 530px;
+        object-fit: contain;
+        z-index: 1;
+    }
+    .colordiv{
+        position: absolute;
+        top: 51%;
+        left: 35%;
+        height: 300px;
+        width: 600px;
+        background-color:rgb(86, 86, 158);
+        z-index: 0;
+    
+    }
+    .servicedetal{
+        position: absolute;
+        top: 45%;
+        right: 3.6%;
+        width: 770px;
+        height: 200px;
+        background-color: white;
+        z-index: 999;
+        padding: 1em;
+    }
+    .servicedetal h1{
+        margin-bottom: 0.5em;
+        font-size: 2.5em;
+    }
+    .servicedetal p{
+        line-height: 1.5em;
+        font-size: 1.2em;
+    }
+    
+}
+
+/* ------------------------------------------------servicessection device 1200 end------------------------------------ */
+
+
+
+/* ------------------------------------------------servicessection2 device 576 start------------------------------------ */
+@media screen and (min-width:576px) {
+    .servicesectionbg{
+        background-color: var(--bgcolor);
+        height: 180vh;
+        width: 100vw;
+        position: relative;
+    }
+    .smallcircle2{
+        position: absolute;
+        top: 4%;
+        right: 10%;
+        height: 90px;
+        width: 90px;
+        background-color: var(--circlebg);
+        border-radius: 50%;
+    
+    }
+    .companyinfo{
+        position: absolute;
+        top: 17%;
+        left: 6%;
+        background-color: white;
+        width: 460px;
+        height: 250px;
+        padding: 2em;
+        z-index: 0;
+        text-align: justify;
+        
+    }
+    .personwithplane{
+        position: absolute;
+        top: 38%;
+        left: 6%;
+        width: 460px;
+        height: 415px;
+    }
+    .companyinfo p{
+        font-size: 1.2em;
+        line-height: 1.5em;
+        margin-bottom: 1.4em;
+    }
+    .learnmorebtn2{
+        padding: 0.4em;
+        height: 6vh;
+        width: 30vw;
+    }
+    .sidedetail{
+        position: absolute;
+        width: 300px;
+        height: 200px;
+        top: 68%;
+        right: 6%;
+        padding: 2em ;
+    }
+    .sidedetail h1{
+        color: var(--bgcolor);
+        font-size: 1.8em;
+    }
+    .mediumcircle2{
+        position: absolute;
+        top: 86%;
+        left: 6%;
+        height: 125px;
+        width:125px;
+    
+    
+    }
+}
+
+/* ------------------------------------------------servicessection2 device 576 end------------------------------------ */
+
+
+/* ------------------------------------------------servicessection2 device 768 start------------------------------------ */
+@media screen and (min-width:768px) {
+    .servicesectionbg{
+        background-color: var(--bgcolor);
+        height: 120vh;
+        width: 100vw;
+        position: relative;
+    }
+    .smallcircle2{
+        position: absolute;
+        top: 4%;
+        right: 10%;
+        height: 90px;
+        width: 90px;
+        background-color: var(--circlebg);
+        border-radius: 50%;
+    
+    }
+    .companyinfo{
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        background-color: white;
+        width: 255px;
+        height: 470px;
+        padding: 1em 2em;
+        z-index: 0;
+        text-align: justify;
+        
+    }
+    .personwithplane{
+        position: absolute;
+        top: 20%;
+        left: 43%;
+        width: 318px;
+        height: 470px;
+    }
+    .companyinfo p{
+        font-size: 1.2em;
+        line-height: 1.8em;
+        margin-bottom: 1.4em;
+    }
+    .learnmorebtn2{
+        padding: 0.4em;
+        height: 6vh;
+        width: 20vw;
+    }
+    .sidedetail{
+        position: absolute;
+        width: 280px;
+        height: 200px;
+        top: 68%;
+        right: 4.5%;
+        padding: 2em ;
+    }
+    .sidedetail h1{
+        color: var(--bgcolor);
+        font-size: 1.8em;
+    }
+    .mediumcircle2{
+        position: absolute;
+        top: 72%;
+        left: 6%;
+        height: 125px;
+        width:125px;
+    
+    
+    }
+}
+
+/* ------------------------------------------------servicessection2 device 768 end------------------------------------ */
+
+
+/* ------------------------------------------------servicessection2 device 992 start------------------------------------ */
+@media screen and (min-width:992px) {
+    .servicesectionbg{
+        background-color: var(--bgcolor);
+        height: 120vh;
+        width: 100vw;
+        position: relative;
+    }
+    .smallcircle2{
+        position: absolute;
+        top: 4%;
+        right: 10%;
+        height: 90px;
+        width: 90px;
+        background-color: var(--circlebg);
+        border-radius: 50%;
+    
+    }
+    .companyinfo{
+        position: absolute;
+        top: 20%;
+        left: 12%;
+        background-color: white;
+        width: 275px;
+        height: 470px;
+        padding: 1em 2em;
+        z-index: 0;
+        text-align: justify;
+        
+    }
+    .personwithplane{
+        position: absolute;
+        top: 20%;
+        left: 39.7%;
+        width: 445px;
+        height: 470px;
+    }
+    .companyinfo p{
+        font-size: 1.2em;
+        line-height: 1.8em;
+        margin-bottom: 1.4em;
+    }
+    .learnmorebtn2{
+        padding: 0.4em;
+        height: 6vh;
+        width: 15vw;
+    }
+    .sidedetail{
+        position: absolute;
+        width: 350px;
+        height: 160px;
+        top: 68%;
+        right: 4.5%;
+        padding: 1.2em ;
+    }
+    .sidedetail h1{
+        color: var(--bgcolor);
+        font-size: 2em;
+    }
+    .mediumcircle2{
+        position: absolute;
+        top: 72%;
+        left: 8%;
+        height: 125px;
+        width:125px;
+    
+    
+    }
+}
+
+/* ------------------------------------------------servicessection2 device 992 end------------------------------------ */
+
+
+
+
+/* ------------------------------------------------servicessection2 device 1200 start------------------------------------ */
+@media screen and (min-width:1200px) {
+    .servicesectionbg{
+        background-color: var(--bgcolor);
+        height: 120vh;
+        width: 100vw;
+        position: relative;
+    }
+    .smallcircle2{
+        position: absolute;
+        top: 4%;
+        right: 10%;
+        height: 90px;
+        width: 90px;
+        background-color: var(--circlebg);
+        border-radius: 50%;
+    
+    }
+    .companyinfo{
+        position: absolute;
+        top: 19%;
+        left: 14%;
+        background-color: white;
+        width: 295px;
+        height: 490px;
+        padding: 3em 2em;
+        z-index: 0;
+        text-align: justify;
+        
+    }
+    .personwithplane{
+        position: absolute;
+        top: 19%;
+        left: 35.6%;
+        width: 591px;
+        height: 490px;
+    }
+    .companyinfo p{
+        font-size: 1.3em;
+        line-height: 1.8em;
+        margin-bottom: 1.2em;
+    }
+    .learnmorebtn2{
+        padding: 0.4em;
+        height: 6vh;
+        width: 15vw;
+    }
+    .sidedetail{
+        position: absolute;
+        width: 400px;
+        height: 180px;
+        top: 68%;
+        right: 3.8%;
+        padding: 2em 1.2em ;
+    }
+    .sidedetail h1{
+        color: var(--bgcolor);
+        font-size: 2em;
+    }
+    .mediumcircle2{
+        position: absolute;
+        top: 73%;
+        left: 11%;
+        height: 130px;
+        width:130px;
+    
+    
+    }
+}
+
+/* ------------------------------------------------servicessection2 device 1200 end------------------------------------ */
+
+
+
+
+/* ------------------------------------------------teamsection device 576 start------------------------------------ */
+@media screen  and (min-width:576px) {
+    .teamsectionbg{
+        background-color: white;
+        height: 285vh;
+        width: 100vw;
+        position: relative;
+        
+    }
+    
+    .teamimg{
+        position:absolute;
+        top: 6%;
+        left: 15%;
+        width: 70%;
+        height: 370px;
+        object-fit: cover;
+    }
+    .teamdetail{
+        position: absolute;
+        top:25.5%;
+        left: 15%;
+        width: 70%;
+        height: 195px;
+        background-color:rgb(86, 86, 158);
+        color: white;
+        padding: 1em;
+      
+    }
+    .teamdetail h3{
+        font-size: 1.9em;
+        margin-bottom: 0.5em;
+    }
+    .teamdetail p{
+        font-size: 1.2em;
+    }
+    .teams1{
+        position: absolute;
+        top:35.8%;
+        left: 15%;
+        width: 70%;
+        height: 370px;
+        object-fit: cover;
+    }
+    .teams2{
+        position: absolute;
+        top:55.3%;
+        left: 15%;
+        width: 70%;
+        height: 370px;
+        object-fit: cover;
+    }
+    .teams3{
+        position: absolute;
+        top:74.8%;
+        left: 15%;
+        width: 70%;
+        height: 370px;
+        object-fit: cover;
+    }
+    .teamsectionbg h4{
+        position: absolute;
+        top: 96%;
+        left: 39%;
+    }
+    
+    
+}
+
+
+/* ------------------------------------------------teamsection  device 576 end------------------------------------ */
+
+
+
+/* ------------------------------------------------teamsection device 768 start------------------------------------ */
+@media screen  and (min-width:768px) {
+    .teamsectionbg{
+        background-color: white;
+        height: 190vh;
+        width: 100vw;
+        position: relative;
+        
+    }
+    
+    .teamimg{
+        position:absolute;
+        top: 9%;
+        left: 15%;
+        width: 70%;
+        height: 370px;
+        object-fit: cover;
+    }
+    .teamdetail{
+        position: absolute;
+        top:37.8%;
+        left: 15%;
+        width: 35%;
+        height: 340px;
+        background-color:rgb(86, 86, 158);
+        color: white;
+        padding: 5em 2em;
+        
+      
+    }
+    .teamdetail h3{
+        font-size: 1.9em;
+        margin-bottom: 0.5em;
+    }
+    .teamdetail p{
+        font-size: 1.2em;
+        text-align: justify;
+        line-height: 1.2em;
+    }
+    .teams1{
+        position: absolute;
+        top:37.8%;
+        left: 50%;
+        width: 35%;
+        height: 340px;
+        object-fit: cover;
+    }
+    .teams2{
+        position: absolute;
+        top:63.4%;
+        left: 15%;
+        width: 35%;
+        height: 340px;
+        object-fit: cover;
+    }
+    .teams3{
+        position: absolute;
+        top:63.4%;
+        left: 50%;
+        width: 35%;
+        height: 340px;
+        object-fit: cover;
+    }
+    .teamsectionbg h4{
+        position: absolute;
+        top: 94%;
+        left: 39%;
+        font-size: 1.5em;
+    }
+    
+    
+}
+
+
+/* ------------------------------------------------teamsection  device 768 end------------------------------------ */
+
+
+/* ------------------------------------------------teamsection device 992 start------------------------------------ */
+@media screen  and (min-width:992px) {
+    .teamsectionbg{
+        background-color: white;
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        
+    }
+    
+    .teamimg{
+        position:absolute;
+        top: 16%;
+        left: 5.1%;
+        width: 39%;
+        height: 450px;
+        object-fit: cover;
+    }
+    .teamdetail{
+        position: absolute;
+        top:16%;
+        left: 44%;
+        width: 25%;
+        height: 250px;
+        background-color:rgb(86, 86, 158);
+        color: white;
+        padding: 2.4em 2em;
+        
+      
+    }
+    .teamdetail h3{
+        font-size: 2.2em;
+        margin-bottom: 0.5em;
+    }
+    .teamdetail p{
+        font-size: 1.2em;
+        text-align: justify;
+        line-height: 1.2em;
+    }
+    .teams1{
+        position: absolute;
+        top: 16%;
+        left: 69%;
+        width: 25%;
+        height: 250px;
+        object-fit: cover;
+    }
+    .teams2{
+        position: absolute;
+        top:53.5%;
+        left: 44%;
+        width: 25%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .teams3{
+        position: absolute;
+        top:53.5%;
+        left: 69%;
+        width: 25%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .teamsectionbg h4{
+        position: absolute;
+        top: 90%;
+        left: 42%;
+        font-size: 1.5em;
+    }
+    
+    
+}
+
+
+/* ------------------------------------------------teamsection  device 992 end------------------------------------ */
+
+
+/* ------------------------------------------------teamsection device 1024 start------------------------------------ */
+@media screen  and (min-width:1024px) {
+    .teamsectionbg{
+        background-color: white;
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        
+    }
+    
+    .teamimg{
+        position:absolute;
+        top: 16%;
+        left: 3.9%;
+        width: 39%;
+        height: 450px;
+        object-fit: cover;
+    }
+    .teamdetail{
+        position: absolute;
+        top:16%;
+        left: 42.9%;
+        width: 26.4%;
+        height: 250px;
+        background-color:rgb(86, 86, 158);
+        color: white;
+        padding: 2.4em 2em;
+        
+      
+    }
+    .teamdetail h3{
+        font-size: 2.2em;
+        margin-bottom: 0.5em;
+    }
+    .teamdetail p{
+        font-size: 1.2em;
+        text-align: justify;
+        line-height: 1.2em;
+    }
+    .teams1{
+        position: absolute;
+        top: 16%;
+        left: 69.3%;
+        width: 26.4%;
+        height: 250px;
+        object-fit: cover;
+    }
+    .teams2{
+        position: absolute;
+        top:53.6%;
+        left: 42.9%;
+        width: 26.4%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .teams3{
+        position: absolute;
+        top:53.6%;
+        left: 69.3%;
+        width: 26.4%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .teamsectionbg h4{
+        position: absolute;
+        top: 90%;
+        left: 43.3%;
+        font-size: 1.5em;
+    }
+    
+    
+}
+
+
+/* ------------------------------------------------teamsection  device 1024 end------------------------------------ */
+
+/* ------------------------------------------------teamsection device 1200 start------------------------------------ */
+@media screen  and (min-width:1200px) {
+    .teamsectionbg{
+        background-color: white;
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        
+    }
+    
+    .teamimg{
+        position:absolute;
+        top: 16%;
+        left: 3.9%;
+        width: 39%;
+        height: 450px;
+        object-fit: cover;
+    }
+    .teamdetail{
+        position: absolute;
+        top:16%;
+        left: 42.9%;
+        width: 26.4%;
+        height: 250px;
+        background-color:rgb(86, 86, 158);
+        color: white;
+        padding: 2.4em 2em;
+        
+      
+    }
+    .teamdetail h3{
+        font-size: 2.2em;
+        margin-bottom: 0.5em;
+    }
+    .teamdetail p{
+        font-size: 1.2em;
+        text-align: justify;
+        line-height: 1.2em;
+    }
+    .teams1{
+        position: absolute;
+        top: 16%;
+        left: 69.3%;
+        width: 26.4%;
+        height: 250px;
+        object-fit: cover;
+    }
+    .teams2{
+        position: absolute;
+        top:53.6%;
+        left: 42.9%;
+        width: 26.4%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .teams3{
+        position: absolute;
+        top:53.6%;
+        left: 69.3%;
+        width: 26.4%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .teamsectionbg h4{
+        position: absolute;
+        top: 90%;
+        left: 43.3%;
+        font-size: 1.5em;
+    }
+    
+    
+}
+
+
+/* ------------------------------------------------teamsection  device 1200 end------------------------------------ */
+
+
+
+/* ------------------------------------------------featuresection device 576 start------------------------------------ */
+@media screen and (min-width:576px) {
+    .featuresectionbg{
+        background-color: var(--bgcolor);
+        height: 200vh;
+        width: 100vw;
+        
+    }
+    .featurecenter{
+        width: 100vw;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        padding: 1em 0;
+    }
+    .title{
+        display: grid;
+        place-items: center;
+        width: 100%;
+        padding: 1em 0;
+       
+    }
+    .featuresectionbg h2{
+        margin-bottom: 0.5em;
+        text-transform: uppercase;
+        color: white;
+        letter-spacing: 0.1em;
+    }
+    .featuresectionbg h1{
+        color: white;
+        width: 80%;
+        text-align: center;
+    }
+    .eachbox{
+        background-color: var(--circlebg);
+        margin-top: 1.5em;
+        width: 70%;
+        height: 312px;
+        padding: 1em;
+    }
+    .eachbox i{
+        font-size: 2.5em;
+        color: white;
+        margin-bottom: 0.4em;
+    }
+    .eachbox h2{
+        color: white;
+        text-transform: capitalize;
+        font-size: 1.6em;
+    }
+    .eachbox p{
+        color: white;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 0.5em;
+    }
+    .morebtn{
+        padding: 0.3em;
+        border: unset;
+        background-color: unset;
+        color: white;
+        font-size: 1.1em;
+        font-weight: lighter;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    .underline{
+        height: 1%;
+        width: 15vw;
+        margin: 0 auto;
+        background-color: white;
+    }
+    
+}
+/* ------------------------------------------------featuresection  device 576 end------------------------------------ */
+
+
+
+/* ------------------------------------------------featuresection device 768 start------------------------------------ */
+@media screen and (min-width:768px) {
+    .featuresectionbg{
+        background-color: var(--bgcolor);
+        height: 140vh;
+        width: 100vw;
+        padding:  2em ;
+        
+    }
+    .featurecenter{
+        width: 90vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        padding: 1em 0;
+    }
+    .title{
+        display: grid;
+        place-items: center;
+        width: 100%;
+        padding: 1em 0;
+       
+    }
+    .featuresectionbg h2{
+        margin-bottom: 0.5em;
+        text-transform: uppercase;
+        color: white;
+        letter-spacing: 0.1em;
+    }
+    .featuresectionbg h1{
+        color: white;
+        width: 80%;
+        text-align: center;
+    }
+    .eachbox{
+        background-color: var(--circlebg);
+        margin-top: 1.5em;
+        width: 47.6%;
+        height: 312px;
+        padding: 1em;
+
+    }
+    .eachbox.c{
+        margin-left: 1em;
+    }
+    .eachbox i{
+        font-size: 2.5em;
+        color: white;
+        margin-bottom: 0.4em;
+    }
+    .eachbox h2{
+        color: white;
+        text-transform: capitalize;
+        font-size: 1.6em;
+    }
+    .eachbox p{
+        color: white;
+        font-size: 1.2em;
+        font-weight: bold;
+        margin-bottom: 0.5em;
+    }
+    .morebtn{
+        padding: 0.3em;
+        border: unset;
+        background-color: unset;
+        color: white;
+        font-size: 1.1em;
+        font-weight: lighter;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    .underline{
+        height: 1%;
+        width: 15vw;
+        margin: 0 auto;
+        background-color: white;
+    }
+    
+}
+/* ------------------------------------------------featuresection  device 768 end------------------------------------ */
+
+/* ------------------------------------------------featuresection device 992 start------------------------------------ */
+@media screen and (min-width:992px) {
+    .featuresectionbg{
+        background-color: var(--bgcolor);
+        height: 100vh;
+        width: 100vw;
+        padding:  2em ;
+        
+    }
+    .featurecenter{
+        width: 90vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        padding: 1em 0;
+    }
+    .title{
+        display: grid;
+        place-items: center;
+        width: 100%;
+        padding: 1em 0;
+       
+    }
+    .featuresectionbg h2{
+        margin-bottom: 0.5em;
+        text-transform: uppercase;
+        color: white;
+        letter-spacing: 0.1em;
+    }
+    .featuresectionbg h1{
+        color: white;
+        width: 80%;
+        text-align: center;
+    }
+    .eachbox{
+        background-color: var(--circlebg);
+        margin-top: 1.5em;
+        width: 32.1%;
+        height: 400px;
+        padding: 1em;
+
+    }
+    .eachbox.c{
+        margin-left: 1em;
+    }
+    .eachbox.d{
+        margin-left: 1em;
+    }
+  
+    
+}
+/* ------------------------------------------------featuresection  device  992 end------------------------------------ */
+
+
+/* ------------------------------------------------featuresection device 1200 start------------------------------------ */
+@media screen and (min-width:1200px) {
+    .featuresectionbg{
+        background-color: var(--bgcolor);
+        height: 100vh;
+        width: 100vw;
+        padding:  2em 2.9em ;
+        
+    }
+    .featurecenter{
+        width: 93vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        padding: 1em 0;
+    }
+    .title{
+        display: grid;
+        place-items: center;
+        width: 100%;
+        padding: 1em 0;
+       
+    }
+    .featuresectionbg h2{
+        margin-bottom: 0.5em;
+        text-transform: uppercase;
+        color: white;
+        letter-spacing: 0.1em;
+    }
+    .featuresectionbg h1{
+        color: white;
+        width: 80%;
+        text-align: center;
+    }
+    .eachbox{
+        background-color: var(--circlebg);
+        margin-top: 1.5em;
+        width: 32.1%;
+        height: 400px;
+        padding: 1em;
+
+    }
+    .eachbox.c{
+        margin-left: 1em;
+    }
+    .eachbox.d{
+        margin-left: 1em;
+    }
+  
+    
+}
+/* ------------------------------------------------featuresection  device  1200 end------------------------------------ */
+
+
+
+/* ------------------------------------------------footersection device 768 start------------------------------------ */
+@media screen and (min-width:768px) {
+    .footersection{
+        height: auto;
+        width: 100vw;
+        display: flex;
+    }
+    .firstfooter{
+        width: 100%;
+        height: 190px;
+        background-color:#09a19f;
+        display: grid;
+        place-items: center;
+    }
+    .secondfooter{
+        display: inline-block;
+        width: 100%;
+        height: 190px;
+        background-color:var(--circlebg);
+        display: grid;
+        place-items: center;
+    }
+    .thirdfooter{
+        width: 100%;
+        height: 190px;
+        background-color:#7bcfce;
+        display: grid;
+        place-items: center;
+    
+    }
+    .centerfooter{
+        height: 90%;
+        width: 50%;
+        text-align: center;
+        padding: 1em 0;
+        color: white;
+    }
+    .footersection i{
+        font-size: 2.5em;
+        margin-bottom: 0.5em;
+    }
+    .footersection h4{
+        text-transform: uppercase;
+        margin-bottom: 0.5em;
+        font-size: 0.9em;
+        font-weight: bold;
+    
+    }
+    .footersection h3{
+        font-size: 1.4em;
+    }
+    .thirdfooter h3{
+        margin-left: -10%;
+    }
+    
+}
+/* ------------------------------------------------footersection device 768 end------------------------------------ */ 
